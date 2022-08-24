@@ -1,0 +1,32 @@
+<div class="column content">
+    <div class="header">
+        <h1>Cursos de Front</h1>
+    </div>
+    <h1>Online</h1>
+    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto
+        de relleno estándar de las industrias desde el año 1500</p>
+    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto
+        de relleno estándar de las industrias desde el año 1500</p>
+</div>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let item of ArregloCursos" class="col-md-6 col-lg-4">
+                <div class="card mx-30">
+                    <img src={{item.imagen}}
+                    class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.titulo}}</h5>
+                        <h6>{{item.subtitulo}}</h6>
+                        <p class="card-text">
+                            {{item.descripcion}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
